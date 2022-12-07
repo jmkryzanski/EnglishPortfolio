@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbrand">
+            <h1><a href="./index.html" class="brand">Brand</a></h1>
+            <div class="burger" id="burger">
+                <span class="burger-open">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+                        <g fill="#252a32" fill-rule="evenodd">
+                            <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
+                        </g>
+                    </svg>
+                </span>
+                <span class="burger-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                        <path fill="#252a32" fill-rule="evenodd" d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+        <ul class="menu" id="menu">
+            <li class="menu-item"><a href="{% url 'home' %}" class="menu-link">Home</a></li>
+            <li class="menu-item"><a href="{% url 'blog' %}" class="menu-link">Blog</a></li>
+            <li class="menu-item"><a href="{% url 'about' %}" class="menu-link">About</a></li>
+            <li class="menu-item"><a href="{% url 'contact' %}" class="menu-link">Contact</a></li>
+        </ul>
+        <div class="social">
+            <a href="http://www.facebook.com" class="social-item"><i class="fa fa-facebook"></i></a>
+            <a href="http://www.instagram.com" class="social-item"><i class="fa fa-instagram"></i></a>
+        </div>
+    </nav>
+    {% block content %}
+    {% endblock %}
+    <footer>
+        <div class="center-text">
+            <h1>Website Name</h1>
+            <p>ddd</p>
+            <p>ddd</p>
+            <p>ddd</p>
+            <p>ddd</p>
+        </div>
+    </footer>
+    <script>
+        const burgerMenu = document.getElementById("burger");
+        const navbarMenu = document.getElementById("menu");
+        
+        // Responsive Navbar Toggle
+        burgerMenu.addEventListener("click", function () {
+            navbarMenu.classList.toggle("active");
+            burgerMenu.classList.toggle("active");
+        });
+    </script>
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+individual post
+
+<div>
+    {{post.title}}
+    {{post.author}}
+    
+    {% autoescape off %}
+    {{post.body}}
+    {% endautoescape %}
+</div>
+
+
+{% endblock %}

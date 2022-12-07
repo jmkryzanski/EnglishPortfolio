@@ -1,0 +1,30 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="box-5">
+    <div class="center-text form1">
+       <form method="POST">
+           <h1>Contact</h1>
+           {% csrf_token %}
+           <label>Email</label>
+           <br>
+           {{form.email}}
+           <br>
+           <div>
+               <label>Subject</label>
+               <br>
+               {{form.subject}}
+           </div>
+           <br>
+           <div>
+               <label>Message</label>
+               <br>
+               {{form.message}}
+           </div>
+           <input class="btn-submit" type="submit" value="Submit">
+       </form>
+   </div>
+</div>
+
+{% endblock %}
