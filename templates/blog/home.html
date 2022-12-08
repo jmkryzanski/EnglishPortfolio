@@ -4,37 +4,44 @@
 
 <div class="container">
     <div class="box-1">
-        <h1 class="text-title-home">Learn English with Jon</h1>
-        <h2 class="text-secondary">Online lessons for English learners</h2>
+        <h1 id="home-title">Learn English with Jon</h1>
+        <h2 id="home-subtitle">Online lessons for English learners</h2>
 
     </div>
-    <!--<div class="box-2">
-        <img src="{% static 'img/p.jpg' %}"
-        width="200px">
-    </div>-->
+    <div class="box-2">
+        <!--<img class="image-pad" src="{% static 'img/p.jpg' %}" width="250px">-->
+        <p class="home-intro">Hey there! My name is Jon and I am a private English teacher.</p>
+        <p class="home-intro">I have been tutoring students for more than 3 years. My method of teaching focuses on improving conversation skills.</p>
+    </div>
     <div class="box-3">
-        <h1>About Me</h1>
-        <img class="image-pad" src="{% static 'img/p.jpg' %}" width="250px">
-        <p class="text-3">Hey there! My name is Jon and I am a private English teacher.</p>
-        <p class="text-3">I have been tutoring students for more than 3 years. My method of teaching focuses on improving conversation skills.</p>
+        <div class="box-3-a">
+            <h1 id="home-book" class="padding1">Book a Lesson With Me</h1>
+        </div>
+        <div class="box-3-b" style="display: flex; flex-direction: column;">
+            <h2 class="center-text home-book-title" style="padding: 10px 0;">Trial Lesson</h2>
+            <p class="home-book-text">Free 30 minute consultation</p>
+            <ul class="home-book-text dashed">
+                <li>Discuss your goals</li>
+            </ul>
+            <btn class="btn-book">Free</btn>
+            
+        </div>
+        <div class="box-3-c" style="display: flex; flex-direction: column;">
+            <h2 class="center-text home-book-title">Full Lesson</h2>
+            <p class="home-book-text">1 Hour Conversational Lesson</p>
+            <ul class="home-book-text dashed">
+                <li>
+                    Focusing on improving your conversational skills
+                </li>
+                <li>
+                    Learning from your mistakes
+                </li>
+            </ul>
+            <btn class="btn-book">Free</btn>
+        </div>
+    </div>
     </div>
     <div class="box-4">
-        <div class="x">
-            <h2 class="text-secondary">Learn English with Me</h2>
-        </div>
-        <div class="y">
-            <p>
-                dawu
-            </p>
-        </div>
-        <div class="z">
-            <p>
-                dawu
-            </p>
-        </div>
-    </div>
-    </div>
-    <div class="box-5">
          <div class="center-text form1">
             <form method="POST">
                 <h2 class="text-secondary">Contact</h2>
