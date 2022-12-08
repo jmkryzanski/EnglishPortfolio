@@ -15,13 +15,14 @@
     </div>
     <div class="box-3">
         <div class="box-3-a">
-            <h1 id="home-book" class="padding1">Book a Lesson With Me</h1>
+            <h1 id="home-book" class="padding-bottom1">Book a Lesson With Me</h1>
         </div>
         <div class="box-3-b" style="display: flex; flex-direction: column;">
-            <h2 class="center-text home-book-title" style="padding: 10px 0;">Trial Lesson</h2>
+            <h2 class="center-text home-book-title">Trial Lesson</h2>
             <p class="home-book-text">Free 30 minute consultation</p>
             <ul class="home-book-text dashed">
                 <li>Discuss your goals</li>
+                <li>Assess your current level</li>
             </ul>
             <btn class="btn-book">Free</btn>
             
@@ -37,32 +38,41 @@
                     Learning from your mistakes
                 </li>
             </ul>
-            <btn class="btn-book">Free</btn>
+            <btn class="btn-book center-text">Free</btn>
         </div>
     </div>
     </div>
     <div class="box-4">
-         <div class="center-text form1">
-            <form method="POST">
-                <h2 class="text-secondary">Contact</h2>
-                {% csrf_token %}
-                <label>Email</label>
-                <br>
-                {{form.email}}
-                <br>
-                <div>
-                    <label>Subject</label>
+        <div class="box-4-a" style="display: flex; flex-direction: column;">
+            <h1 class="contact-title">Contact Us</h1>
+            <h2>Jonathan Kryzanski</h2>
+            <p>jmkryzanski@gmail.com</p>
+            <p>jmkryzanski@gmail.com</p>
+            <p>jmkryzanski@gmail.com</p>
+        </div>
+        <div class="box-4-b">
+            <div class="center-text form1">
+                <form method="POST">
+                    <h2 class="text-secondary">Contact</h2>
+                    {% csrf_token %}
+                    <label class="form-label">Email</label>
                     <br>
-                    {{form.subject}}
-                </div>
-                <br>
-                <div>
-                    <label>Message</label>
+                    {{form.email}}
                     <br>
-                    {{form.message}}
-                </div>
-                <input class="btn-submit" type="submit" value="Submit">
-            </form>
+                    <div>
+                        <label class="form-label">Subject</label>
+                        <br>
+                        {{form.subject}}
+                    </div>
+                    <br>
+                    <div>
+                        <label class="form-label">Message</label>
+                        <br>
+                        {{form.message}}
+                    </div>
+                    <input class="btn-submit" type="submit" value="Submit">
+                </form>
+            </div>
         </div>
     </div>
   </div>
