@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="center-text">
-    <h1 class="text-title">Post Archive</h1>
+    <h1 id="blog-title">Post Archive</h1>
     {% for post in object_list %}
             <a class="third-theme course-title" href="{% url 'post' post.slug %}">{{post.title}} | {{post.post_date}}</a><br>
         {% endfor %}
