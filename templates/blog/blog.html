@@ -2,24 +2,22 @@
 {% load static %}
 {% block content %}
 
-<div class="center-text">
-    <h1 id="blog-title">Post Archive</h1>
+<div class="other-container">
+    <h1 id="blog-title" class="center-text">Post Archive</h1>
     {% for post in object_list %}
-            <a class="third-theme course-title" href="{% url 'post' post.slug %}">{{post.title}} | {{post.post_date}}</a><br>
+            <a class="blog-post-title center-text" href="{% url 'post' post.slug %}">{{post.title}} | {{post.post_date}}</a><br>
         {% endfor %}
 </div>
 
 
 
-<div class="wrapper">
+<!--<div class="wrapper">
     <div class="box d">
       <div class="box e">E</div>
       <div class="box f">F</div>
       <div class="box g">G</div>
     </div>
 </div>
-
-
 <style>
 .wrapper {
     display: grid;
@@ -61,6 +59,6 @@
     grid-column: 2;
     grid-row: 2;
   }
-</style>
+</style>-->
 
 {% endblock %}

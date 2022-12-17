@@ -1,29 +1,56 @@
 {% extends 'blog/base.html' %}
 {% block content %}
+{% load static %}
 
-<div>
-    <h1 id="about-title" class="center-text">About Me</h1>
-    <div class="about-text padding2">
 
+<div class="other-container">
+    <!--<h1 id="about-title" class="center-text">About Me</h1>
+    <div class="about-text">
         <p>
-            &emsp;My name is Jon and I am a private English teacher, as well as a freelance software engineer.
+            <span>&emsp;My name is Jon and I am a private English teacher, as well as a freelance software engineer.
             I am a native English speaker, born and raised in Connecticut. In 2022, I graduated with a Bachelor's degree in computer science.<br><br>
-
-
-            &emsp;Outside of the computer field, I have always been interested in both studying and teaching foreign languages. Besides English, I speak Polish fluently
+            </span>
+            <span>&emsp;Outside of the computer field, I have always been interested in both studying and teaching foreign languages. Besides English, I speak Polish fluently
             and have studied Spanish, Russian, and Italian. I have tested out many different language learning techniques myself and know what works and what does not.<br><br>
-
-
-            &emsp;I believe the best way to learn a language is by receiving as much input as possible by reading and listening, and most importantly talking. My method of teaching
+            </span>
+            <span>&emsp;I believe the best way to learn a language is by receiving as much input as possible by reading and listening, and most importantly talking. My method of teaching
             is based upon working on <b>conversation skills</b>. During our lessons, we pick a topic to discuss and I will help you to express yourself and improve your conversation
             skills. I will give you feedback on your vocabulary and pronunciation, as well as write down your mistakes so you can learn from them. We will not
             spend half the class learning grammar rule exceptions from a textbook! Learning a language should be an enjoyable process!
+            </span>
         </p>
+    </div>-->
+    <div class="about-box-full-4">
+        <div class="about-box-sub-4-a" style="display: flex; flex-direction: column;">
+            <div style="display: flex; flex-direction: column;">
+                <img id="about-image" class="image-pad" src="{% static 'img/p.jpg' %}" style="max-width: 100%; height: auto; ">
+                <!--<img class="image-pad" src="{% static 'img/p.jpg' %}" style="max-width: 100%; height: auto; ">-->
+            </div>
+        </div>
+        <div class="about-box-sub-4-b">
+            <h1 id="about-title" class="center-text">About Me</h1>
+            <div class="about-text">
+                <p>
+                    <span>&emsp;My name is Jon and I am a private English teacher, as well as a freelance software engineer.
+                    I am a native English speaker, born and raised in Connecticut. In 2022, I graduated with a Bachelor's degree in computer science.<br><br>
+                    </span>
+                    <span>&emsp;Outside of the computer field, I have always been interested in both studying and teaching foreign languages. Besides English, I speak Polish fluently
+                    and have studied Spanish, Russian, and Italian. I have tested out many different language learning techniques myself and know what works and what does not.<br><br>
+                    </span>
+                    <span>&emsp;I believe the best way to learn a language is by receiving as much input as possible by reading and listening, and most importantly talking. My method of teaching
+                    is based upon working on <b>conversation skills</b>. During our lessons, we pick a topic to discuss and I will help you to express yourself and improve your conversation
+                    skills. I will give you feedback on your vocabulary and pronunciation, as well as write down your mistakes so you can learn from them. We will not
+                    spend half the class learning grammar rule exceptions from a textbook! Learning a language should be an enjoyable process!
+                    </span>
+                </p>
+            </div>
+        </div>
     </div>
+
 </div>
 
 
-https://www.i-to-i.com/tefl-blog/teaching-english-online/how-to-find-your-niche-when-teaching-english-online/
+<!--https://www.i-to-i.com/tefl-blog/teaching-english-online/how-to-find-your-niche-when-teaching-english-online/
 
 Niche ideas:
 - Laid back teaching style
@@ -46,4 +73,5 @@ A. Relevant Experience in-country, certified teacher, related MA, Delta, etc.
 That's been my experience. However even though where I work is all A level requirements a CELTA is still a big plus. Read "Choosing a TEFL certification" in the sidebar->
 "Teaching would provide a lot of cultural exposure but I also would like to have time to travel."
 So teaching is generally pretty full-time, especially your first few years. If your interest is in travel I would recommend workaway, a student visa (often can study for cheap and work!), or a working holiday visa. In my experience all are much more exposure and fun. If you want to give language instruction a shot go for it but don't expect a ton of freetime (depends a bit on location, big world and all that).
+-->
 {% endblock %}
