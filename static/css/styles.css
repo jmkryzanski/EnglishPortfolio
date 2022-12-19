@@ -231,6 +231,10 @@ footer {
 		  margin-left: 10%;
 		  margin-right: 10%;
 	  }
+	  .non-box{
+		margin-left: 10%;
+		margin-right: 10%;
+	  }
 	  .box-full-3{
 		grid-template-areas: 
 		"A A A A"
@@ -259,6 +263,10 @@ footer {
 
 @media (min-width: 768px){
 	[class^="box-full"] { 
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	.non-box{
 		margin-left: 15%;
 		margin-right: 15%;
 	}
@@ -438,16 +446,18 @@ footer {
 .about-box-sub-4-a{
 	grid-area: A;
 
-	border-radius: 20px;
+	/*border-radius: 20px;
 	box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+	*/
 }
 .about-box-sub-4-b{
 	grid-area: B;
 	place-items: center;
 	color: var(--fifth-theme);
 
-	border-radius: 20px;
+	/*border-radius: 20px;
 	box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+	*/
 }
 
 
@@ -611,16 +621,44 @@ footer {
 .home-book-title{
 	color: var(--fifth-theme);
 	font-size: 24px;
-	padding: 10px 0;
+	margin: 10px 0;
+}
+.home-book-price{
+	color: var(--fifth-theme);
+	font-size: 36px;
+	margin-bottom: 10px;
 }
 .home-book-text{
 	color: var(--fifth-theme);
 	font-size: 18px;
 	padding: 0 8%;
 }
+#home-other-subtitle{
+	color: var(--fifth-theme);
+	font-size: 24px;
+	margin-bottom: var(--margin1);
+}
+.home-book-list{
+	margin-bottom: 10px;
+}
 
+#contact-box{
+	/*border-radius: 20px;
+	box-shadow: 10px 10px 19px #1b1d20, -10px -10px 19px #121315;
+	*/
+}
 .contact-title{
 	color: var(--first-theme);
+	margin: 10px 0;
+}
+.other-contact-title{
+	color: var(--first-theme);
+	padding: 20px 0;
+}
+.contact-text{
+	color: var(--fifth-theme);
+	font-size: 24px;
+	padding: var(--padding1);
 }
 
 #about-title{
@@ -633,19 +671,12 @@ footer {
 	font-size: 21px;
 }
 
-#other-contact-title{
-	color: var(--first-theme);
-	padding: var(--padding1);
-}
+
 #other-form{
 	border-radius: 20px;
 	/*box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;*/
 	box-shadow: 10px 10px 19px #1b1d20, -10px -10px 19px #121315;
-}
-
-.contact-text{
-	color: var(--fifth-theme);
-	font-size: 24px;
+	margin: var(--margin1) 0;
 }
 
 #blog-title{

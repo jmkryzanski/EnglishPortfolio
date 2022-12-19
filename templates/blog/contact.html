@@ -3,26 +3,36 @@
 {% block content %}
 
 <div class="other-container">
+    <div id="contact-box">
+        <h1 class="center-text other-contact-title">Get in touch with me!</h1>
+        <p class="contact-text">If you are interested in learning English, I will be happy to work with you. I have several free spots available</p>
+        <p class="contact-text">I accept new students manually. You can contact me by email: jmkryzanski@gmail.com. Please mention your time zone, your current English level, and what your goals with English are.</p>
+        <p class="contact-text">Or, you can fill out the form below</p>
+
+    </div>
     <div class="center-text">
         <form method="POST" id="other-form">
-            <h1 id="other-contact-title">Contact Form</h1>
+            <h1 class="contact-title">Contact Form</h1>
             {% csrf_token %}
-            <label class="form-label">Email</label>
-            <br>
-            {{form.email}}
-            <br>
-            <div>
-                <label class="form-label">Subject</label>
+            <div style="padding: 20px;">
+                <label class="form-label">Email</label>
                 <br>
-                {{form.subject}}
-            </div>
-            <br>
-            <div>
-                <label class="form-label">Message</label>
+                {{form.email}}
                 <br>
-                {{form.message}}
-            </div>
+                <div>
+                    <label class="form-label">Subject</label>
+                    <br>
+                    {{form.subject}}
+                </div>
+                <br>
+                <div>
+                    <label class="form-label">Message</label>
+                    <br>
+                    {{form.message}}
+                </div>
+            
             <input class="btn-submit" type="submit" value="Submit">
+        </div>
         </form>
     </div>
 </div>
